@@ -1,0 +1,18 @@
+{
+  "name": "codeinjector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "unpack": "npx asar extract electron.asar tmp",
+    "pack": "npx asar pack tmp tmp.asar",
+    "inject": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asar": "^2.0.1",
+    "rimraf": "^3.0.0"
+  }
+}
